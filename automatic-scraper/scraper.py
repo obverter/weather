@@ -4,11 +4,10 @@
 # sourcery skip: for-index-underscore
 import pandas as pd
 import requests
-from secrets import TOKEN, STATION
 
 
 response = requests.get(
-    f"https://swd.weatherflow.com/swd/rest/observations/station/{STATION}?token={TOKEN}"
+    "https://swd.weatherflow.com/swd/rest/observations/station/92258?token=170e381b-652e-43b1-bb53-a201c2e0371f"
 )
 
 weather = response.json()
