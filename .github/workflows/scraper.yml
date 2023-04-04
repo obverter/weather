@@ -16,7 +16,7 @@ jobs:
       # Download all of the code from your repo
       - name: Check out this repo
         uses: actions/checkout@v3
-      # Set up Python 3.10
+      # Set up Python 3.11.2
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
